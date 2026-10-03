@@ -58,17 +58,38 @@ export default function Skills() {
                       }}
                     />
                   </svg>
-                  {/* Centre abbreviation */}
+                  {/* Centre logo (abbreviation as fallback) */}
                   <div
-                    className="absolute inset-0 flex items-center justify-center rounded-full"
+                    className="absolute inset-0 flex items-center justify-center rounded-full overflow-hidden"
                     style={{ background: skill.color }}
                   >
-                    <span
-                      className="text-white text-lg font-bold"
-                      style={{ fontFamily: 'var(--font-display)' }}
-                    >
-                      {skill.abbr}
-                    </span>
+                    {skill.logo ? (
+                      <>
+                        <img
+                          src={skill.logo}
+                          alt={`${skill.name} logo`}
+                          className="w-14 h-14 rounded-full object-cover"
+                          loading="lazy"
+                          onError={(e) => {
+                            e.target.style.display = 'none';
+                            e.target.nextElementSibling.style.display = 'block';
+                          }}
+                        />
+                        <span
+                          className="text-white text-lg font-bold"
+                          style={{ fontFamily: 'var(--font-display)', display: 'none' }}
+                        >
+                          {skill.abbr}
+                        </span>
+                      </>
+                    ) : (
+                      <span
+                        className="text-white text-lg font-bold"
+                        style={{ fontFamily: 'var(--font-display)' }}
+                      >
+                        {skill.abbr}
+                      </span>
+                    )}
                   </div>
                 </div>
 
