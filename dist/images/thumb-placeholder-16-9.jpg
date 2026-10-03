@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#0f1730"/>
+  <rect x="280" y="140" width="80" height="80" rx="12" fill="#1a2545" stroke="#2f8cff30" stroke-width="2"/>
+  <polygon points="310,160 310,200 340,180" fill="#2f8cff"/>
+  <text x="320" y="260" font-family="Arial" font-size="12" fill="#8892a8" text-anchor="middle">REPLACE: Project Thumbnail (16:9)</text>
+</svg>
