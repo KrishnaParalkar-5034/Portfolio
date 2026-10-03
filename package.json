@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "preinstall":"chmod -R u+x node_modules/.bin",
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
