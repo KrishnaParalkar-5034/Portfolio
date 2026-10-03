@@ -58,12 +58,13 @@ export const services = [
 
 // ── Software Skills ────────────────────────────────────────────
 // level: 0–100 (shown as a progress ring)
+// logo: official app icon shown in the ring centre (abbr is the fallback)
 export const skills = [
-  { name: "CapCut",     abbr: "CC", color: "#1a1a2e", accent: "#00d4ff", level: 92 },
-  { name: "VN Editor",  abbr: "VN", color: "#1c1c1e", accent: "#ffffff", level: 85 },
-  { name: "PicsArt",    abbr: "PA", color: "#09c4e2", accent: "#ffffff", level: 78 },
-  { name: "Edits (IG)", abbr: "ED", color: "#e1306c", accent: "#ffffff", level: 80 },
-  { name: "Snapseed",   abbr: "SN", color: "#4caf50", accent: "#ffffff", level: 75 },
+  { name: "CapCut",     abbr: "CC", color: "#1a1a2e", accent: "#00d4ff", level: 92, logo: "/images/logos/capcut.jpg" },
+  { name: "VN Editor",  abbr: "VN", color: "#1c1c1e", accent: "#ffffff", level: 85, logo: "/images/logos/vn.png" },
+  { name: "PicsArt",    abbr: "PA", color: "#09c4e2", accent: "#ffffff", level: 78, logo: "/images/logos/picsart.png" },
+  { name: "Edits (IG)", abbr: "ED", color: "#e1306c", accent: "#ffffff", level: 80, logo: "/images/logos/edits.png" },
+  { name: "Snapseed",   abbr: "SN", color: "#4caf50", accent: "#ffffff", level: 75, logo: "/images/logos/snapseed.png" },
 ];
 
 // ── Shooting Skills ────────────────────────────────────────────
